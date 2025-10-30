@@ -52,11 +52,11 @@ Reproducing the Figures
 The files PlotFig*.m create the panels of Figures 1–5 in the paper. 
 To generate the figures, open Matlab and run:
 
-   PlotFig1
-   PlotFig2
-   PlotFig3
-   PlotFig4
-   PlotFig5
+   - PlotFig1
+   - PlotFig2
+   - PlotFig3
+   - PlotFig4
+   - PlotFig5
 
 Each script automatically loads the corresponding precomputed data.
 
@@ -68,10 +68,10 @@ Numerical Continuation
 The files ComputeFig*.m contain the Matlab code used for numerical continuation of solution branches. 
 To recompute these computations, use:
 
-   ComputeFig2
-   ComputeFig3
-   ComputeFig4
-   ComputeFig5
+   - ComputeFig2
+   - ComputeFig3
+   - ComputeFig4
+   - ComputeFig5
 
 These require DDE-BifTool to be in your Matlab path.
 
@@ -85,10 +85,10 @@ They use pydelay to generate time series data for use in Matlab.
 
 Example workflow:
 
-   cd pythonData/Slice_epsp0022
-   python3 polar_det_period.py     # Identify period
-   python3 polar_gen_psol.py       # Generate and save periodic solution data
-   python3 PolarMaxPeakes.py       # Compute maximum peak data
+   - cd pythonData/Slice_epsp0022
+   - python polar_det_period.py     # Identify period
+   - python polar_gen_psol.py       # Generate and save periodic solution data
+   - python PolarMaxPeakes.py       # Compute maximum peak data
 
 The resulting .txt files can then be imported into Matlab for continuation and plotting.
 
